@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --main:#0B9586;
+    --second:#FFBB1C;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+a{
+    color: #ffffff;
+}
+
+nav{
+    background-color:var(--main);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+nav .navigation a{
+    margin: 0 10px;
+   font-size: 18px;
+}
+nav .call{
+    text-align: right;
+}
+nav .call p:nth-child(2){
+    letter-spacing: .94px;
+    font-weight: 700;
+}
+nav .list i{
+    font-size: 25px !important;
+}
+
+@media(width<768px){
+    .navigation{
+        display: none;
+    }
+}
+@media(width>768px){
+    .list{
+        display: none;
+    }
+}
+header{
+    background-image: url("./asset/solar-panels-meadow\ 1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+header .header{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    color: #ffffff;
+}
+header .header .bar{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+}
+.w3-border{
+    width: 300px;
+    height: 10px;
+    background: #575757;
+    border: none !important;
+}
+.w3-grey{
+    background-color: #ffffff !important;
+    height: 100%;
+    width:40%;
+}
+
+header .header h1{
+    font-size: 52px;
+    font-weight: 600;
+}
