@@ -22,10 +22,6 @@
 body{
     overflow-x: hidden;
 }
-
-a{
-    color: #ffffff;
-}
 .numeric{
         font-family: 'Akazan Book', sans-serif;
 }
@@ -36,6 +32,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 16px 150px;
+}
+nav a{
+    color: #ffffff;
 }
 nav .navigation a{
     margin: 0 10px;
@@ -227,4 +226,15 @@ button{
     line-height: 24px;
     max-width: 900px;
     text-align: center;
+}
+.grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px 0;
+}
+.card{
+    width: 359px;
+    height: 454px;
 }
