@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: 'Akazan Book';
+    src: url('fonts/Akazan-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 :root {
     --main:#0B9586;
     --second:#FFBB1C;
@@ -18,6 +24,9 @@ body{
 
 a{
     color: #ffffff;
+}
+.numeric{
+        font-family: 'Akazan Book', sans-serif;
 }
 nav{
     background-color:var(--main);
@@ -55,6 +64,9 @@ nav .list i{
     .Friendliest{
         padding:50px 30px !important ;
     }
+    .power{
+        padding:50px 30px !important ;
+    }
     
 
 }
@@ -67,7 +79,6 @@ header{
     background-image: url("./asset/solar-panels-meadow\ 1.png");
     background-size:cover;
     background-repeat: no-repeat;
-    min-height: 600px;
     padding:  100px 100px;
 }
 header .header{
@@ -126,39 +137,46 @@ button{
     background-color: var(--second);
 }
 .Friendliest{
-    padding:100px;
+    padding:50px 100px;
+    display: flex;
+    align-items: center;
+    
+}
+.Friendliest .container{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: start;
+    justify-content: space-between;
 }
-.Friendliest .Friendliest-left .headline{
+.headline{
     font-weight: 600;
     font-size: 42px;
-    max-width: 600px;
     margin-bottom: 30px;
 }
-.Friendliest .Friendliest-left p:nth-of-type(2){
+.Friendliest .container .Friendliest-left p:nth-of-type(2){
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     max-width: 600px;
     color: #475467;
 }
-.Friendliest .Friendliest-left .points{
+.Friendliest .container .Friendliest-left .points{
     margin: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.Friendliest .Friendliest-left .points p{
+.Friendliest .container .Friendliest-left .points p{
     font-size: 20px;
     font-weight: 600;
     color:var(--headline);
+    
 }
-.Friendliest .Friendliest-left .points p span{
+.Friendliest .container .Friendliest-left .points p span{
     font-weight: 700;
     color:#84BD3A;
+    letter-spacing: 4px;
 }
 .Friendliest .rectangle{
     width: 100%;
@@ -170,7 +188,6 @@ button{
     max-width: 280px;
     padding: 15px;
     border-radius: 20px;
-    z-index: 99999;
     position: relative;
     bottom: 210px;
     right: 35px;
@@ -178,4 +195,10 @@ button{
 .Friendliest .solar .Solar_Charging img{
     width: 100px;
     margin-bottom: 25px;
+}
+.power{
+    background-image: url(./asset/8116\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
 }
