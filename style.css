@@ -34,7 +34,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 100px;
+    padding: 10px 150px;
 }
 nav .navigation a{
     margin: 0 10px;
@@ -61,12 +61,10 @@ nav .list i{
     header{
         padding: 100px 30px !important;
     }
-    .Friendliest{
-        padding:50px 30px !important ;
+    .container{
+        padding:50px 30px !important;
     }
-    .power{
-        padding:50px 30px !important ;
-    }
+    
     
 
 }
@@ -79,7 +77,6 @@ header{
     background-image: url("./asset/solar-panels-meadow\ 1.png");
     background-size:cover;
     background-repeat: no-repeat;
-    padding:  100px 100px;
 }
 header .header{
     color: #ffffff;
@@ -136,54 +133,54 @@ button{
 .request{
     background-color: var(--second);
 }
-.Friendliest{
-    padding:50px 100px;
+.body{
     display: flex;
-    align-items: center;
-    
+    flex-direction: column;
 }
-.Friendliest .container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-between;
+.container{
+    padding:100px 150px;
 }
 .headline{
     font-weight: 600;
     font-size: 42px;
     margin-bottom: 30px;
 }
-.Friendliest .container .Friendliest-left p:nth-of-type(2){
+.Friendliest{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Friendliest-left p:nth-of-type(2){
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     max-width: 600px;
     color: #475467;
 }
-.Friendliest .container .Friendliest-left .points{
+.Friendliest-left .points{
     margin: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.Friendliest .container .Friendliest-left .points p{
+.Friendliest-left .points p{
     font-size: 20px;
     font-weight: 600;
     color:var(--headline);
     
 }
-.Friendliest .container .Friendliest-left .points p span{
+.Friendliest-left .points p span{
     font-weight: 700;
     color:#84BD3A;
     letter-spacing: 4px;
 }
-.Friendliest .rectangle{
+.rectangle{
     width: 100%;
     height: auto;
     display: block;
 }
-.Friendliest .solar .Solar_Charging{
+.solar .Solar_Charging{
     background: var(--second);
     max-width: 280px;
     padding: 15px;
@@ -192,7 +189,7 @@ button{
     bottom: 210px;
     right: 35px;
 }
-.Friendliest .solar .Solar_Charging img{
+.solar .Solar_Charging img{
     width: 100px;
     margin-bottom: 25px;
 }
@@ -200,5 +197,16 @@ button{
     background-image: url(./asset/8116\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.power .container p:nth-of-type(2){
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 620px;
+}
+.power button{
+    background-color: var(--second);
+    margin: 20px 0;
 }
