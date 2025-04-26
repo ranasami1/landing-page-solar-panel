@@ -2,26 +2,30 @@
 :root {
     --main:#0B9586;
     --second:#FFBB1C;
+    --headline:#101828;
   }
   
 *{
     margin: 0;
-    padding: 0;
+    padding: 0 0;
+    box-sizing: border-box;
     text-decoration: none;
     font-family: "Inter", sans-serif;
+}
+body{
+    overflow-x: hidden;
 }
 
 a{
     color: #ffffff;
 }
-
 nav{
     background-color:var(--main);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 200px;
+    padding: 10px 100px;
 }
 nav .navigation a{
     margin: 0 10px;
@@ -43,14 +47,16 @@ nav .list i{
         display: none;
     }
     nav{
-        padding:10px 50px;
+        padding: 10px 30px ;
     }
     header{
-        padding: 100px;
+        padding: 100px 30px !important;
     }
     .Friendliest{
-        padding: 100px 50px;
+        padding:50px 30px !important ;
     }
+    
+
 }
 @media(width>1024px){
     .list{
@@ -62,7 +68,7 @@ header{
     background-size:cover;
     background-repeat: no-repeat;
     min-height: 600px;
-    padding:  100px 200px;
+    padding:  100px 100px;
 }
 header .header{
     color: #ffffff;
@@ -86,25 +92,26 @@ header .header .bar{
     width:40%;
 }
 
-header .header h1{
+header .header .text p:first-of-type{
     font-size: 52px;
     font-weight: 600;
 }
-header .header p{
+header .header .text p:nth-of-type(2){
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     max-width: 700px;
 }
-header .header .buttons{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+header .header .text .buttons{
     margin: 30px 0;
+    display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+
 }
-header .header .buttons button{
+button{
     height: 50px;
+    width: auto;
     padding: 0 30px;
     border-radius: 30px;
     border: none;
@@ -119,21 +126,56 @@ header .header .buttons button{
     background-color: var(--second);
 }
 .Friendliest{
-    padding: 100px 200px;
+    padding:100px;
     display: flex;
-    gap: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
 }
-.Friendliest h1{
+.Friendliest .Friendliest-left .headline{
     font-weight: 600;
     font-size: 42px;
+    max-width: 600px;
+    margin-bottom: 30px;
 }
-.Friendliest p{
+.Friendliest .Friendliest-left p:nth-of-type(2){
     font-weight: 400;
     font-size: 16px;
+    line-height: 24px;
+    max-width: 600px;
+    color: #475467;
 }
-.Friendliest .Friendliest-left h1,.Friendliest .Friendliest-left p{
-    max-width: 550px;
+.Friendliest .Friendliest-left .points{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Friendliest .Friendliest-left .points p{
+    font-size: 20px;
+    font-weight: 600;
+    color:var(--headline);
+}
+.Friendliest .Friendliest-left .points p span{
+    font-weight: 700;
+    color:#84BD3A;
+}
+.Friendliest .rectangle{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.Friendliest .solar .Solar_Charging{
+    background: var(--second);
+    max-width: 280px;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 99999;
+    position: relative;
+    bottom: 210px;
+    right: 35px;
+}
+.Friendliest .solar .Solar_Charging img{
+    width: 100px;
+    margin-bottom: 25px;
 }
