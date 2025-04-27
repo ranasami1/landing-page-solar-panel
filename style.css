@@ -36,7 +36,7 @@ nav{
     flex-wrap: wrap;
 }
 nav .logo a img{
-    width: 157px;
+    width: 150px;
     mix-blend-mode:multiply;
 }
 nav .navigation a{
@@ -52,7 +52,7 @@ nav .call p:nth-child(2){
     font-weight: 700;
 }
 nav .list i{
-    font-size: 25px !important;
+    font-size: 30px !important;
 }
 
 @media(width<1024px){
@@ -60,7 +60,7 @@ nav .list i{
         display: none;
     }
     nav{
-        padding: 10px 30px ;
+        padding: 10px 30px;
     }
     header{
         padding: 100px 30px !important;
@@ -254,7 +254,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap:10px;
+    gap: 10px;
 }
 .detail h3{
     font-size: 20px;
@@ -329,7 +329,7 @@ button{
 }
 .grid-energy{
     max-width: 360px;
-    min-height: 420px;
+    height: 420px;
     border-radius: 12px;
     outline: 1px solid #3CAB90;
     background-color: #f5f7ee;
@@ -342,7 +342,6 @@ button{
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
     border-radius: 10px;
 }
 .energy .container .rigth-grid .grid-energy .img img{
@@ -356,15 +355,28 @@ button{
     flex-wrap:wrap;
     justify-content:center;
 }
-.rigth-grid .detail{
-    padding: 0;
+.rigth-grid .detail,#values .detail{
+    padding: 0 !important;
+    margin-top: 10px;
 }
-.rigth-grid .detail p{
+.rigth-grid .detail p, #values .detail p{
     font-size: 16px;
     font-weight: 400;
     color: var(--grey);
     line-height: 24px;  
 }
-.values .container .grid .grid-energy{
+#values .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#values .container p:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--grey) ;
+}
+#values .container .grid .grid-energy{
     background-color: #f5fbf9 !important;
 }
