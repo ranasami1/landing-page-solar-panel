@@ -298,3 +298,29 @@ button{
     line-height: 140%;
     color: #ffffff !important;
 }
+.energy{
+    background-color: #fffbf3;
+}
+.energy .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.energy .container .left-grid svg{
+    width: 50px;
+    height: 50px;
+    background-color: var(--main);
+    padding: 10px;
+    border-radius: 5px;
+    outline: 10px solid #e2f0e5;
+}
+.energy .container .left-grid{
+    max-width: 370px;
+}
+.energy .container .left-grid p:nth-of-type(2){
+    text-align:left !important;
+}
+.energy .container .rigth-grid .grid-energy{
+    max-width: 360px;
+    height: 420px;
+}
