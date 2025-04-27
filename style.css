@@ -323,15 +323,13 @@ button{
 .energy .container .left-grid p:nth-of-type(2){
     text-align:left !important;
 }
-.energy .container .rigth-grid .grid-energy{
+.grid-energy{
     max-width: 360px;
-    height: 420px;
+    min-height: 420px;
     border-radius: 12px;
     outline: 1px solid #3CAB90;
     background-color: #f5f7ee;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 24px;
 }
 .energy .container .rigth-grid .grid-energy .img{
     background-color: #DAECE1;
@@ -341,6 +339,7 @@ button{
     align-items: center;
     justify-content: center;
     margin: 10px auto;
+    border-radius: 10px;
 }
 .energy .container .rigth-grid .grid-energy .img img{
     width: 160px;
@@ -353,9 +352,15 @@ button{
     flex-wrap:wrap;
     justify-content: end;
 }
+.rigth-grid .detail{
+    padding: 0;
+}
 .rigth-grid .detail p{
     font-size: 16px;
     font-weight: 400;
     color: var(--grey);
     line-height: 24px;  
+}
+.values .container .grid .grid-energy{
+    background-color: #f5fbf9 !important;
 }
