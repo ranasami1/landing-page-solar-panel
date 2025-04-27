@@ -31,7 +31,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 150px;
+    flex-wrap: wrap;
 }
 nav a{
     color: #ffffff;
@@ -229,12 +231,70 @@ button{
 }
 .grid{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     margin: 30px 0;
 }
 .card{
     width: 359px;
     height: 454px;
+    box-shadow: 5px 10px 18px #e5dfdf;
+}
+.card .detail{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap:10px;
+}
+.card .detail h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #101828;
+}
+.card .detail p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey);
+    line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+}
+.card .detail a{
+    color: var(--main);
+    font-size: 16px;
+    font-weight: 600;
+}
+.sec4{
+    background-image: url(./asset/8116\ 1\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec4 .container{
+    color: #ffffff;
+}
+.sec4 .container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#00000094;
+    max-width: 858px;
+    border-radius: 12px;
+    padding: 44px;
+    backdrop-filter: blur(10px);
+}
+.sec4 .container p:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #ffffff !important;
 }
