@@ -35,12 +35,14 @@ nav{
     padding: 16px 150px;
     flex-wrap: wrap;
 }
-nav a{
-    color: #ffffff;
+nav .logo a img{
+    width: 157px;
+    mix-blend-mode:multiply;
 }
 nav .navigation a{
     margin: 0 10px;
    font-size: 18px;
+   color: #ffffff;
 }
 nav .call{
     text-align: right;
@@ -195,6 +197,7 @@ button{
 .solar .Solar_Charging img{
     width: 100px;
     margin-bottom: 25px;
+    
 }
 .power{
     background-image: url(./asset/8116\ 1.png);
@@ -242,14 +245,14 @@ button{
     height: 454px;
     box-shadow: 5px 10px 18px #e5dfdf;
 }
-.card .detail{
+.detail{
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     gap:10px;
 }
-.card .detail h3{
+.detail h3{
     font-size: 20px;
     font-weight: 600;
     color: #101828;
@@ -262,13 +265,13 @@ button{
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    
+    -webkit-box-orient: vertical;  
 }
-.card .detail a{
+.detail a{
     color: var(--main);
     font-size: 16px;
     font-weight: 600;
+    margin-top: 15px;
 }
 .sec4{
     background-image: url(./asset/8116\ 1\ \(1\).png);
@@ -303,13 +306,13 @@ button{
 }
 .energy .container{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 .energy .container .left-grid svg{
     width: 50px;
     height: 50px;
-    background-color: var(--main);
+    background-color: #3CAB90;
     padding: 10px;
     border-radius: 5px;
     outline: 10px solid #e2f0e5;
@@ -323,4 +326,36 @@ button{
 .energy .container .rigth-grid .grid-energy{
     max-width: 360px;
     height: 420px;
+    border-radius: 12px;
+    outline: 1px solid #3CAB90;
+    background-color: #f5f7ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.energy .container .rigth-grid .grid-energy .img{
+    background-color: #DAECE1;
+    width: 311px;
+    height: 106px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+.energy .container .rigth-grid .grid-energy .img img{
+    width: 160px;
+    mix-blend-mode:luminosity;
+}
+.rigth-grid{
+    display: flex;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap:wrap;
+    justify-content: end;
+}
+.rigth-grid .detail p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey);
+    line-height: 24px;  
 }
