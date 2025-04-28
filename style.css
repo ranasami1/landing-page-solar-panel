@@ -31,18 +31,18 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-items: center;
     padding: 16px 150px;
     flex-wrap: wrap;
+    font-size: 18px;
 }
 nav .logo a img{
     width: 150px;
     mix-blend-mode:multiply;
 }
-nav .navigation a{
-    margin: 0 10px;
-   font-size: 18px;
-   color: #ffffff;
+nav .navigation{
+    display: flex;
+    gap: 10px;
+    color: #ffffff;
 }
 nav .call{
     text-align: right;
@@ -50,13 +50,14 @@ nav .call{
 nav .call p:nth-child(2){
     letter-spacing: .94px;
     font-weight: 700;
+    font-size: 24px;
 }
 nav .list i{
     font-size: 30px !important;
 }
 
 @media(width<1024px){
-    .navigation{
+    .navigation a{
         display: none;
     }
     nav{
@@ -74,6 +75,18 @@ nav .list i{
         flex-wrap: wrap;
         justify-content: center !important;
         gap: 30px;
+    }
+}
+@media(width<500px){
+    nav{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    nav .call{
+        text-align: center;
     }
 }
 @media(width>1024px){
@@ -140,10 +153,6 @@ button{
 }
 .request{
     background-color: var(--second);
-}
-.body{
-    display: flex;
-    flex-direction: column;
 }
 .container{
     padding:100px 150px;
@@ -282,23 +291,18 @@ button{
     background-image: url(./asset/8116\ 1\ \(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .sec4 .container{
     color: #ffffff;
 }
-.sec4 .container div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.sec4 .container #textContainer{
+    text-align: center;
     background-color:#00000094;
     max-width: 858px;
     border-radius: 12px;
     padding: 44px;
     backdrop-filter: blur(10px);
+    margin: auto;
 }
 .sec4 .container p:nth-of-type(2) {
     font-size: 20px;
@@ -367,9 +371,7 @@ button{
     line-height: 24px;  
 }
 #values .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 #values .container p:nth-of-type(2){
     font-size: 18px;
