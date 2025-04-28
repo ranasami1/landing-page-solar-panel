@@ -88,6 +88,16 @@ nav .list i{
     nav .call{
         text-align: center;
     }
+    .up{
+        justify-content: center !important;
+    }
+    .up #nav{
+        flex-direction: column;
+    }
+    .up .sec2{
+        text-align: center;
+        margin: 20px 0;
+    }
 }
 @media(width>1024px){
     .list{
@@ -359,6 +369,7 @@ button{
     display: flex;
     flex-wrap:wrap;
     gap: 32px;
+    justify-content: center;
 }
 .rigth-grid .detail,#values .detail{
     padding: 0 !important;
@@ -426,6 +437,8 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .info{
     display: flex;
@@ -435,4 +448,96 @@ button{
 }
 #name{
     font-weight: 700;  
+}
+footer{
+    background-color: #283646;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+.up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px #71777D solid;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.up img{
+    width: 185px;
+    mix-blend-mode: luminosity;
+}
+.up #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.up .sec1{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+.up .sec2{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+.subscribe-form {
+    display: flex;
+    background-color:#b3bdc75c ;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  .subscribe-form input {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    background: transparent;
+    color: white;
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .subscribe-form input::placeholder {
+    color: #ccc;
+  } 
+  .subscribe-form button {
+    background-color: var(--second); 
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    color: white;
+    
+  }
+  
+  .subscribe-form button:hover {
+    background-color: var(--second);
+  }
+#last{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 30px;
+flex-wrap: wrap;
+color: #92989F !important;
+font-size: 16px !important;
+font-weight: 400;
+margin: 38px 0;
+line-height: 16px;
+}
+#lastNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#lastNav a{
+    border-right: 2px #92989F solid;
+    padding: 0 15px 0 0;
 }
