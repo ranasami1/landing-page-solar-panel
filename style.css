@@ -99,6 +99,11 @@ nav .list i{
         margin: 20px 0;
     }
 }
+@media(width<380px){
+    .subscribe-form input{
+        width: 90% !important;
+    }
+}
 @media(width>1024px){
     .list{
         display: none;
@@ -350,6 +355,7 @@ button{
     outline: 1px solid #3CAB90;
     background-color: #f5f7ee;
     padding: 24px;
+    text-align: left;
     
 }
 .energy .container .rigth-grid .grid_energy .img{
@@ -489,8 +495,7 @@ footer{
     background-color:#b3bdc75c ;
     border: 1px solid #ccc;
     border-radius: 50px;
-    overflow: hidden;
-    align-items: center;
+    align-items: center; 
   }
   
   .subscribe-form input {
