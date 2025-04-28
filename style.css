@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @font-face {
     font-family: 'Akazan Book';
-    src: url('fonts/Akazan-Book.ttf') format('truetype');
+    src: url('./fonts/Akazan-Book/Akazan-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -147,6 +147,7 @@ button{
 }
 .container{
     padding:100px 150px;
+    width: 100%;
 }
 .headline{
     font-weight: 600;
@@ -201,7 +202,6 @@ button{
 .solar .Solar_Charging img{
     width: 100px;
     margin-bottom: 25px;
-    
 }
 .power{
     background-image: url(./asset/8116\ 1.png);
@@ -239,15 +239,16 @@ button{
 .grid{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
     justify-content: center;
-    gap: 30px;
+    gap: 32px;
     margin: 30px 0;
 }
 .card{
     width: 359px;
     height: 454px;
     box-shadow: 5px 10px 18px #e5dfdf;
+   
 }
 .detail{
     padding: 20px;
@@ -312,6 +313,7 @@ button{
     display: flex;
     align-items: start;
     justify-content: space-between;
+    gap: 32px;
 }
 .energy .container .left-grid svg{
     width: 50px;
@@ -327,15 +329,16 @@ button{
 .energy .container .left-grid p:nth-of-type(2){
     text-align:left !important;
 }
-.grid-energy{
+.grid_energy{
     max-width: 360px;
     height: 420px;
     border-radius: 12px;
     outline: 1px solid #3CAB90;
     background-color: #f5f7ee;
     padding: 24px;
+    
 }
-.energy .container .rigth-grid .grid-energy .img{
+.energy .container .rigth-grid .grid_energy .img{
     background-color: #DAECE1;
     width: 311px;
     height: 106px;
@@ -344,22 +347,20 @@ button{
     justify-content: center;
     border-radius: 10px;
 }
-.energy .container .rigth-grid .grid-energy .img img{
+.energy .container .rigth-grid .grid_energy .img img{
     width: 160px;
     mix-blend-mode:luminosity;
 }
 .rigth-grid{
     display: flex;
-    gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
     flex-wrap:wrap;
-    justify-content:center;
+    gap: 32px;
 }
 .rigth-grid .detail,#values .detail{
     padding: 0 !important;
     margin-top: 10px;
 }
-.rigth-grid .detail p, #values .detail p{
+.rigth-grid .detail p, #values .detail p,#woc .container .woc p:nth-of-type(2){
     font-size: 16px;
     font-weight: 400;
     color: var(--grey);
@@ -369,7 +370,6 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 #values .container p:nth-of-type(2){
     font-size: 18px;
@@ -377,6 +377,60 @@ button{
     line-height: 28px;
     color: var(--grey) ;
 }
-#values .container .grid .grid-energy{
-    background-color: #f5fbf9 !important;
+#values .container .grid .grid_energy{
+    background-color: #3CAB900D !important;
+}
+#woc .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#woc .container .woc{
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+#woc .container .woc p:nth-of-type(1){
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    color: #1c1c1c;
+}
+#woc .container .slide{
+    width: 708px;
+    min-height: 443px;
+    background-color: #3CAB900F;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+}
+.slide .head p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #3CAB90;
+}
+.slide .qute p{
+    font-size: 24px !important;
+    color: #101828;
+    line-height: 150%;
+    max-width: 516px;
+   
+}
+.slide .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #1c1c1c;
+}
+#name{
+    font-weight: 700;  
 }
