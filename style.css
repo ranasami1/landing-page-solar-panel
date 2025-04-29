@@ -19,6 +19,11 @@
     text-decoration: none;
     font-family: "Inter", sans-serif;
 }
+.active{
+    background-color: #0a8c7e;
+    border-radius: 0.5px;
+    border-bottom: 1px solid #0c6059;
+}
 body{
     overflow-x: hidden;
 }
@@ -41,9 +46,18 @@ nav .logo a img{
 }
 nav .navigation{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     color: #ffffff;
 }
+nav .navigation a{
+    padding: 10px;
+}
+nav .navigation a:hover{
+    background-color: #0a8c7e;
+    border-radius: 0.5px;
+    border-bottom: 1px solid #0c6059;
+}
+
 nav .call{
     text-align: right;
 }
